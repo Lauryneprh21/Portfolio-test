@@ -1,0 +1,26 @@
+Partie contact
+
+
+EmailjS 
+
+lauryne.prh@icloud.com
+admin
+
+
+----------------------
+admin: 
+
+admin@example.com
+admin
+
+
+
+user basique :
+
+Lauryne.prh@gmail.com
+test
+
+----------------------
+
+
+
