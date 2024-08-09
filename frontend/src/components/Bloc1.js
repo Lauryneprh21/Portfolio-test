@@ -15,7 +15,7 @@ const Bloc1 = () => {
       </div>
       <div className="image-section">
         <img 
-          src="https://res.cloudinary.com/des6g45rz/image/upload/v1723047299/pikaso_texttoimage_pixel-art-House-pixel-8bits_hk72y7.webp" 
+          src="https://res.cloudinary.com/des6g45rz/image/upload/v1723219920/JPFklpE_-_Imgur_1_e4kbz3.webp" 
           alt="Studio de design" 
           loading="lazy" 
           width="565" 
