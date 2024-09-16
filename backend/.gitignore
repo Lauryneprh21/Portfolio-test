@@ -1,0 +1,6 @@
+node_modules/
+.cache/
+
+
+# Ne pas ignorer le dossier build pour le frontend
+!/frontend/build/
