@@ -9,9 +9,9 @@ const API_URL = process.env.NODE_ENV === 'development'
   ? 'http://localhost:5000' 
   : 'https://portfolio-test-1-r0vs.onrender.com/api';  
 
-// Le composant `AuthProvider` fournit les fonctionnalités d'authentification à toute l'application.
+
 export const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null); // Stocke l'état de l'utilisateur connecté.
+  const [user, setUser] = useState(null); 
 
   // Vérifie si un utilisateur est déjà connecté en consultant le token dans le localStorage lors du montage du composant.
   useEffect(() => {
@@ -50,10 +50,10 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  // Fonction d'inscription qui envoie les informations d'inscription à l'API.
+ 
   const signup = async (email, password) => {
     try {
-      // Envoie une requête POST à l'API pour s'inscrire.
+     
       const response = await axios.post(`${API_URL}/signup`, { email, password }, {
         headers: {
           'Content-Type': 'application/json'

@@ -34,11 +34,11 @@ const SignupPage = () => {
 
   return (
     <div className="signup-container">
-      <h2>Signup</h2>
+      <h2>Inscription</h2>
       {/* Formulaire d'inscription */}
       <form onSubmit={handleSignup}>
         <div>
-          <label>Email:</label>
+          <label>Email </label>
           {}
           <input 
             type="email" 
@@ -48,7 +48,7 @@ const SignupPage = () => {
           />
         </div>
         <div>
-          <label>Password:</label>
+          <label>Mot de passe </label>
           {}
           <input 
             type="password" 
@@ -57,7 +57,7 @@ const SignupPage = () => {
             required 
           />
         </div>
-        <button type="submit">Signup</button>
+        <button type="submit">Envoyer</button>
       </form>
 
       {/* Affiche le message d'erreur en rouge si une erreur survient */}

@@ -25,6 +25,8 @@ const LoginPage = () => {
       ? process.env.REACT_APP_API_URL_PROD
       : process.env.REACT_APP_API_URL_LOCAL;
 
+
+      
     try {
       // Appel à l'API pour vérifier les informations de connexion.
       await axios.post(`${apiUrl}/api/login`, { email, password });
@@ -63,11 +65,11 @@ const LoginPage = () => {
           />
         </div>
         <div>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Mot de passe</label>
           <input 
             type="password" 
             id="password"
-            placeholder="Password" 
+            placeholder="Mot de passe" 
             value={password} 
             onChange={(e) => setPassword(e.target.value)} 
             required 
