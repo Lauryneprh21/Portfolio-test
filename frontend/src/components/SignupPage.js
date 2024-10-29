@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import axios from 'axios'; 
- 
 import '../styles/SignupPage.css'; 
 
 const SignupPage = () => {
@@ -12,7 +11,7 @@ const SignupPage = () => {
     e.preventDefault();
 
     
-    const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    const emailRegex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/;
     if (!emailRegex.test(email)) {
       setError('Veuillez entrer une adresse email valide.');
       return;
@@ -23,10 +22,10 @@ const SignupPage = () => {
       : process.env.REACT_APP_API_URL_LOCAL;
 
     try {
-      const response = await axios.post(`${apiUrl}/api/signup`, { email, password });
+      await axios.post(`${apiUrl}/api/signup`, { email, password });
       setError('');
       
-      
+     
       alert('Inscription réussie !');
     } catch (err) {
       setError(err.response?.data?.message || 'Une erreur est survenue');
@@ -58,8 +57,10 @@ const SignupPage = () => {
           </div>
           <button type="submit">Envoyer</button>
         </form>
+
+        { }
+        {error && <p style={{ color: 'red' }}>{error}</p>}
       </div>
-      
     </div>
   );
 };
