@@ -102,7 +102,7 @@ const Bloc5 = () => {
     }
   };
 
-  const [hiddenOeuvres, setHiddenOeuvres] = useState([]);
+  
 
   const toggleVisibility = async (id) => {
     try {
