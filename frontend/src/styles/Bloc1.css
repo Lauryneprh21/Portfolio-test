@@ -1,0 +1,173 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.bloc {
+    margin: 0;   
+    padding: 0;  
+  }
+  
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    height: 732px;
+    
+    background-color: #f5f5f5;
+    border-top: 1px solid #404040; 
+    
+    margin: 0 auto;  
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    padding: 30px;
+  }
+  
+  .text-section {
+    padding: 30px;
+    height: 590px;
+   margin-top: 10px;
+    flex: 1;
+    
+   
+  }
+  
+  .text-section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: #333;  
+    line-height: 110%;
+    max-width: 505px;
+    margin-bottom: 10px;
+  }
+  
+  .text-section p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    max-width: 505px;
+    color: #333;  
+    margin-top: 26px;
+     
+  }
+  
+  .text-section button {
+    
+    padding: 10px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #adf6f2;
+    color: #111111;
+    border: none;
+  
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 151px;
+    height: 45px;
+    line-height: 140%;
+    position: relative;
+    top: 20px;
+     
+  }
+  
+  .text-section button:hover {
+    background-color: #0056b3;
+  }
+  
+  .image-section {
+    flex: 1;
+  }
+  
+  .image-section img {
+    width: 100%;
+  height: 550px; 
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+   
+ 
+    
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text-section, .image-section {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .text-section h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .text-section p {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-section button {
+        top: 10px;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+}
+
+ 
+@media (max-width: 430px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .text-section, .image-section {
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .text-section h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .text-section p {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .text-section button {
+        top: 5px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto;
+        padding: 0;
+    }
+}

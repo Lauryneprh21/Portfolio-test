@@ -1,0 +1,166 @@
+
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+
+.carousel-status {
+  font-size: 12px;  
+}
+
+.carousel-container {
+    width: 1140px;
+    height: 922px;
+    margin: 0 auto;
+  }
+  
+  .carousel-item {
+    width: 100%;
+    height: 743px;
+    margin-top: 33px;
+    margin-left: 30px;
+    text-align: center;
+    padding: 0px;
+    max-width: 313px;
+    line-height: 160%;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: 298px;
+    object-fit: cover; 
+  }
+  
+  .carousel-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    color: #111111;
+    margin: 90px 0 20px;
+    margin-right: 10px;
+    text-align: center;
+  }
+  
+  .carousel-item h3 {
+    margin-bottom: 53px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: #111111;
+    margin: 20px 0 10px;
+  }
+  
+  .carousel-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #111111;
+  }
+  
+  .slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    display: none;
+     
+  }
+  
+  .slick-prev i, .slick-next i {
+    color: white;  
+    font-size: 20px;
+ 
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .carousel-container h2 {
+        font-size: 36px;
+        margin: 60px 0 20px;
+    }
+
+    .carousel-item {
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .carousel-item h3 {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .carousel-item p {
+        font-size: 14px;
+    }
+
+    .slick-prev, .slick-next {
+      
+       
+      margin-right: 150px;
+      margin-left: 150px;
+      margin-top: -310px;
+  }
+
+
+}
+
+ 
+@media (max-width: 430px) {
+    .carousel-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .carousel-container h2 {
+        font-size: 28px;
+        margin: 40px 0 20px;
+    }
+
+    .carousel-item {
+        height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .carousel-item h3 {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-item p {
+        font-size: 12px;
+    }
+
+    .slick-prev, .slick-next {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: -260px;
+    }
+
+    .slick-prev i, .slick-next i {
+        font-size: 16px;
+    }
+
+     
+
+
+
+
+}
